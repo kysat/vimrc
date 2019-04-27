@@ -433,7 +433,9 @@ function! LightlineMode()
   return winwidth(0) > 60 ? lightline#mode() : ''
 endfunction
 
-imap <C-p> <Up>
-imap <C-n> <Down>
+"imap <C-p> <Up>
+"imap <C-n> <Down>
 imap <C-b> <Left>
 imap <C-f> <Right>
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
+imap jj <Esc>
